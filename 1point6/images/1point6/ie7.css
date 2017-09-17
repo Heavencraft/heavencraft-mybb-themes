@@ -1,0 +1,32 @@
+.search_box {
+	float: right;
+	padding-top: 7px;
+	margin-right: -11px;
+	padding-left: 10px;
+}
+
+.logo {
+	margin-top: -50px;
+}
+
+.submenu {
+	margin-top: -15px;
+	padding: 0px !important;
+}
+
+.submenu ul {
+	padding-bottom: 0px;
+	padding-top: 10px;
+}
+
+.submenu li {
+	padding: 0px;
+}
+
+.menu {
+	margin-top: -61px;
+}
+
+#container {
+	margin-top: 20px;
+}

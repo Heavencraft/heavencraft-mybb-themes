@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="1point6" version="1803">
+	<properties>
+		<templateset><![CDATA[3]]></templateset>
+		<editortheme><![CDATA[modern.css]]></editortheme>
+		<imgdir><![CDATA[images/1point6]]></imgdir>
+		<logo><![CDATA[images/1point6/logo.png]]></logo>
+		<tablespace><![CDATA[8]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<color><![CDATA[]]></color>
+		<disporder><![CDATA[a:8:{s:9:"modcp.css";i:1;s:16:"star_ratings.css";i:2;s:14:"showthread.css";i:3;s:10:"usercp.css";i:4;s:10:"custom.css";i:5;s:10:"global.css";i:6;s:17:"thread_status.css";i:7;s:8:"css3.css";i:8;}]]></disporder>
+	</properties>
+	<stylesheets>
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1803"><![CDATA[.modcp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+}
+
+.modcp_nav_home {
+	background: url(images/1point6/modcp/home.png) no-repeat left center;
+}
+
+.modcp_nav_announcements {
+	background: url(images/1point6/modcp/announcements.png) no-repeat left center;
+}
+
+.modcp_nav_reports {
+	background: url(images/1point6/modcp/reports.png) no-repeat left center;
+}
+
+.modcp_nav_modqueue {
+	background: url(images/1point6/modcp/modqueue.png) no-repeat left center;
+}
+
+.modcp_nav_modlogs {
+	background: url(images/1point6/modcp/modlogs.png) no-repeat left center;
+}
+
+.modcp_nav_editprofile {
+	background: url(images/1point6/modcp/editprofile.png) no-repeat left center;
+}
+
+.modcp_nav_banning {
+	background: url(images/1point6/modcp/banning.png) no-repeat left center;
+}
+
+.modcp_nav_warninglogs {
+	background: url(images/1point6/modcp/warninglogs.png) no-repeat left center;
+}
+
+.modcp_nav_ipsearch {
+	background: url(images/1point6/modcp/ipsearch.png) no-repeat left center;
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore, .label_radio_delete, .label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1803"><![CDATA[.star_rating,
+.star_rating li a:hover,
+.star_rating .current_rating {
+	background: url(images/1point6/star_rating.png) left -1000px repeat-x;
+	vertical-align: middle;
+}
+
+.star_rating {
+	position: relative;
+	width:80px;
+	height:16px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+td .star_rating {
+	margin: auto;
+}
+
+.star_rating li {
+	display: inline;
+}
+
+.star_rating li a,
+.star_rating .current_rating {
+	position: absolute;
+	text-indent: -1000px;
+	height: 16px;
+	line-height: 16px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	top:0;
+	left:0;
+}
+
+.star_rating_notrated li a:hover {
+	background-position: left bottom;
+}
+
+.star_rating li a.one_star {
+	width:20%;
+	z-index:6;
+}
+
+.star_rating li a.two_stars {
+	width:40%;
+	z-index:5;
+}
+
+.star_rating li a.three_stars {
+	width:60%;
+	z-index:4;
+}
+
+.star_rating li a.four_stars {
+	width:80%;
+	z-index:3;
+}
+
+.star_rating li a.five_stars {
+	width:100%;
+	z-index:2;
+}
+
+.star_rating .current_rating {
+	z-index:1;
+	background-position: left center;
+}
+
+.star_rating_success, .success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.inline_rating {
+	float: left;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1803"><![CDATA[
+.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+}
+
+.usercp_nav_composepm {
+	background: url(images/1point6/usercp/composepm.png) no-repeat left center;
+}
+
+.usercp_nav_pmfolder {
+	background: url(images/1point6/usercp/pmfolder.png) no-repeat left center;
+}
+
+.usercp_nav_sub_pmfolder {
+	padding-left: 40px;
+	background: url(images/1point6/usercp/sub_pmfolder.png) no-repeat left center;
+}
+
+.usercp_nav_trash_pmfolder {
+	padding-left: 40px;
+	background: url(images/1point6/usercp/trash_pmfolder.png) no-repeat left center;
+}
+
+.usercp_nav_pmtracking {
+	background: url(images/1point6/usercp/pmtracking.png) no-repeat left center;
+}
+
+.usercp_nav_pmfolders {
+	background: url(images/1point6/usercp/editfolders.png) no-repeat left center;
+}
+
+.usercp_nav_profile {
+	background: url(images/1point6/usercp/profile.png) no-repeat left center;
+}
+
+.usercp_nav_email {
+	padding-left: 40px;
+	background: url(images/1point6/usercp/email.png) no-repeat left center;
+}
+
+.usercp_nav_password {
+	padding-left: 40px;
+	background: url(images/1point6/usercp/password.png) no-repeat left center;
+}
+
+.usercp_nav_username {
+	background: url(images/1point6/usercp/username.png) no-repeat left center;
+	padding-left: 40px;
+}
+
+.usercp_nav_editsig {
+	padding-left: 40px;
+	background: url(images/1point6/usercp/editsig.png) no-repeat left center;
+}
+
+.usercp_nav_avatar {
+	padding-left: 40px;
+	background: url(images/1point6/usercp/avatar.png) no-repeat left center;
+}
+
+.usercp_nav_options {
+	background: url(images/1point6/usercp/options.png) no-repeat left center;
+}
+
+.usercp_nav_usergroups {
+	background: url(images/1point6/usercp/usergroups.png) no-repeat left center;
+}
+
+.usercp_nav_editlists {
+	background: url(images/1point6/usercp/editlists.png) no-repeat left center;
+}
+
+.usercp_nav_attachments {
+	background: url(images/1point6/usercp/attachments.png) no-repeat left center;
+}
+
+.usercp_nav_drafts {
+	background: url(images/1point6/usercp/drafts.png) no-repeat left center;
+}
+
+.usercp_nav_subscriptions {
+	background: url(images/1point6/usercp/subscriptions.png) no-repeat left center;
+}
+
+.usercp_nav_fsubscriptions {
+	background: url(images/1point6/usercp/fsubscriptions.png) no-repeat left center;
+}
+
+.usercp_nav_notepad {
+	background: url(images/1point6/usercp/notepad.png) no-repeat left center;
+}
+
+.usercp_nav_viewprofile {
+	background: url(images/1point6/usercp/viewprofile.png) no-repeat left center;
+}
+
+.usercp_nav_home {
+	background: url(images/1point6/usercp/home.png) no-repeat left center;
+}
+
+
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="custom.css" version="1803"><![CDATA[input[type="button"], .button {
+        background: #25170f;
+        border: 1px solid black;
+        color: #766053;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 3px 7px;
+        cursor: pointer;
+}
+
+.header {
+        background: none;
+        height: 141px;
+        width: 940px;
+        margin: auto auto;
+}
+
+.logo {
+        float: left;
+        padding-top: 15px;
+        padding-left: 20px;
+}
+
+#message {
+        border: 1px solid #efefef;
+}
+
+.search {
+        float: right;
+        padding-top: 15px;
+        padding-right: 10px;
+}
+
+.search_box {
+        background: url(images/1point6/searchbox.png) no-repeat;
+        width: 209px;
+        height: 31px;
+        border: none;
+        color: #bdbdbd;
+}
+
+.search_button {
+        background: url(images/1point6/search_icon.png) no-repeat;
+        width: 30px;
+        height: 31px;
+        border: none;
+        cursor: pointer;
+        float: right;
+}
+
+.submenu {
+        width: 950px;
+        background: #25170f;
+        color: #766053;
+        text-align: left;
+        margin: auto auto;
+        border-radius-bottomleft: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        border-radius-bottomright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+       margin-top: -21px;
+}
+
+.submenu ul {
+        padding: 7px;
+}
+
+.submenu li, .submenu a {
+        display: inline;
+        color: #766053;
+        padding: 0px 5px;
+}
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="global.css" version="1803"><![CDATA[body {
+	background: black url(images/1point6/background.png) no-repeat;
+        color: #7a7a7a;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+	text-align: center; /* IE 5 fix */
+	line-height: 1.4;
+}
+
+a:link {
+	color: #0099a3;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0099a3;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #0099a3;
+	text-decoration: underline;
+}
+
+#container {
+	width: 940px;
+	background: #fff;
+	color: #000000;
+	margin: auto auto;
+	padding: 5px;
+	text-align: left; /* IE 5 fix */
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+}
+
+#content {
+	/* FIX: Make internet explorer wrap correctly */
+	width: auto !important;
+
+}
+
+.menu {
+        margin: auto auto;
+        padding-top: 99px;
+}
+
+.menu ul {
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	padding: 4px;
+}
+
+.menu ul a, .menu ul a:link {
+	color: #000000;
+	text-decoration: none;
+        padding: 5px 15px;
+}
+
+.menu ul a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.menu ul a:hover, .menu ul a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+        background: #00878f;
+        padding: 5px 15px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+}
+
+#panel {
+	background: #f8f8f8;
+	color: #000000;
+	font-size: 11px;
+	border: 1px solid #efefef;
+	padding: 8px;
+        border-radius-topright: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-right-radius: 5px;
+        border-radius-topleft: 5px;
+        -moz-border-radius-topleft: 5px;
+        -webkit-border-top-left-radius: 5px;
+}
+
+table {
+	color: #7a7a7a;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+.tborder {
+	width: 100%;
+	margin: auto auto;
+        border: 1px solid #efefef;
+        border-radius-topleft: 5px;
+        -moz-border-radius-topleft: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-radius-topright: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-right-radius: 5px;
+}
+
+.tborder2 {
+	width: 100%;
+	margin: auto auto;
+        border: 1px solid #efefef;
+}
+
+.thead {
+	background: #25170f;
+	color: #766053;
+        border-radius-tipleft: 5px;
+        -moz-border-radius-topleft: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-radius-topright: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-right-radius: 5px;
+}
+
+.thead a:link {
+	color: #766053;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #766053;
+	text-decoration: none;
+}
+
+.thead a:hover, .thead a:active {
+	color: #766053;
+	text-decoration: underline;
+}
+
+.tcat {
+	background: #f8f8f8;
+	color: #999999;
+	font-size: 12px;
+        border-bottom: 1px solid #efefef;
+        border-top: 1px solid #efefef;
+}
+
+.tcat a:link {
+	color: #999999;
+}
+
+.tcat a:visited {
+	color: #999999;
+}
+
+.tcat a:hover, .tcat a:active {
+	color: #999999;
+}
+
+.trow1 {
+	background: #f1fbfc;
+}
+
+.trow2 {
+	background: #FFF;
+}
+
+.trow_shaded {
+	background: #ffdde0;
+}
+
+.trow_selected td {
+	background: #f8f8f8;
+}
+
+.trow_sep {
+	background: #e5e5e5;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tfoot {
+	background: #0099a3;
+	color: #ffffff;
+        border-top: 1px solid #efefef;
+}
+
+.tfoot a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tfoot a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tfoot a:hover, .tfoot a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.navigation {
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.navigation a:link {
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	text-decoration: none;
+}
+
+.navigation a:hover, .navigation a:active {
+	text-decoration: none;
+}
+
+.navigation .active {
+	color: #000000;
+	font-size: small;
+	font-weight: bold;
+}
+
+.smalltext {
+	font-size: 11px;
+}
+
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input.textbox {
+	background: #ffffff;
+	color: #7a7a7a;
+	border: 1px solid #efefef;
+	padding: 1px;
+}
+
+textarea {
+	background: #ffffff;
+	color: #7a7a7a;
+	border: 1px solid #efefef;
+	padding: 2px;
+	font-family: Verdana, Arial, Sans-Serif;
+	line-height: 1.4;
+	font-size: 13px;
+}
+
+select {
+	background: #ffffff;
+        color: #7a7a7a;
+	border: 1px solid #efefef;
+}
+
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #efefef;
+}
+
+.editor_control_bar {
+	background: #fff;
+	border: 1px solid #efefef;
+}
+
+.autocomplete {
+	background: #fff;
+	border: 1px solid #efefef;
+	color: black;
+}
+
+.autocomplete_selected {
+	background: #adcee7;
+	color: #000;
+}
+
+.popup_menu {
+	background: #ccc;
+	border: 1px solid #000;
+}
+
+.popup_menu .popup_item {
+	background: #fff;
+	color: #000;
+}
+
+.popup_menu .popup_item:hover {
+	background: #C7DBEE;
+	color: #000;
+}
+
+.trow_reputation_positive {
+	background: #ccffcc;
+}
+
+.trow_reputation_negative {
+	background: #ffcccc;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.invalid_field {
+	border: 1px solid #f30;
+	color: #f30;
+}
+
+.valid_field {
+	border: 1px solid #0c0;
+}
+
+.validation_error {
+	background: url(images/1point6/invalid.png) no-repeat center left;
+	color: #f30;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+.validation_success {
+	background: url(images/1point6/valid.png) no-repeat center left;
+	color: #00b200;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+.validation_loading {
+	background: url(images/1point6/spinner.png) no-repeat center left;
+	color: #555;
+	margin: 5px 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 22px;
+}
+
+/* Additional CSS (Master) */
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+}
+
+.menu li {
+	display: inline;
+	padding-left: 5px;
+}
+
+.menu img {
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+#panel .links {
+	margin: 0;
+	float: right;
+}
+
+.expcolimage {
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+img.attachment {
+	border: 1px solid #E9E5D7;
+	padding: 2px;
+}
+
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+#copyright {
+	font: 11px Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 10px 0 0 0;
+        color: #000;
+}
+
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 0;
+}
+
+blockquote {
+	border: 1px solid #ccc;
+	margin: 0;
+	background: #fff;
+	padding: 4px;
+}
+
+blockquote cite {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	font-style: normal;
+	display: block;
+	margin: 4px 0;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+}
+
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.codeblock {
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+
+.codeblock .title {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	margin: 4px 0;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 13px;
+}
+
+.subforumicon {
+	border: 0;
+	vertical-align: middle;
+}
+
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+.popup_menu .popup_item {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+.autocomplete {
+	text-align: left;
+}
+
+.subject_new {
+	font-weight: bold;
+}
+
+.highlight {
+	background: #FFFFCC;
+	padding: 3px;
+}
+
+.pm_alert {
+        margin-top: 5px;
+	background: #FFF6BF;
+	border: 1px solid #FFD324;
+	text-align: center;
+	padding: 5px 20px;
+	font-size: 11px;
+        border-radius-bottomright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        border-radius-bottomleft: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+}
+
+.red_alert {
+	background: #FBE3E4;
+	border: 1px solid #A5161A;
+	color: #A5161A;
+	text-align: center;
+	padding: 5px 20px;
+	font-size: 11px;
+}
+
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+div.error {
+	padding: 5px 10px;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	background: #FFF6BF;
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #000;
+	font-weight: normal;
+}
+
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 24px;
+	display: block;
+	color: #C00;
+	background: url(images/1point6/error.png) no-repeat 0;
+}
+
+div.error.ul {
+	margin-left: 24px;
+}
+
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+.pagination {
+	font-size: 11px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tfoot .pagination, .tcat .pagination {
+	padding-top: 0;
+}
+.pagination .pages {
+	font-weight: bold;
+}
+
+.pagination .pagination_current, .pagination a {
+	padding: 2px 6px;
+	margin-bottom: 3px;
+}
+
+.pagination a {
+	border: 1px solid #efefef;
+        background: #f8f8f8;
+        color: #999999;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px; 
+}
+
+.pagination .pagination_current {
+	background: #0099a3;
+	font-weight: bold;
+        border: 1px solid #007e86;
+        color: #fff;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;        
+}
+
+.pagination a:hover {
+	background: #fff;
+	text-decoration: none;
+}
+
+.thread_legend, .thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.forum_legend, .forum_legend dt, .forum_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+}
+
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.post_body {
+	padding: 5px;
+}
+
+.post_content {
+	padding: 5px 10px;
+}
+
+.quick_jump {
+	background: url(images/1point6/jump.png) no-repeat 0;
+	width: 13px;
+	height: 13px;
+	padding-left: 13px; /* amount of padding needed for image to fully show */
+	vertical-align: middle;
+	border: none;
+}
+
+		
+		
+		
+		]]>
+		</stylesheet>
+	</stylesheets>
+	<templates>
+		<template name="footer" version="1600"><![CDATA[<br />
+			<div id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community. 
+					 It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact, 
+					 to show your support for MyBB.  If you choose to remove or modify the copyright below, 
+					 you may be refused support on the MyBB Community Forums.
+					 
+					 This is free software, support us and we'll support you. -->
+<span style="float: right; text-align:right;">Proudly {$lang->powered_by} <a href="http://www.mybb.com" target="_blank">MyBB{$mybbversion}</a><br/> &copy; 2002-{$copy_year} <a href="http://www.mybb.com" target="_blank">MyBB Group</a>.</span>
+				<!-- End powered by -->
+                                <!-- Start of theme copyright -->
+Theme by <a href="http://rpbuilder.org" target="_blank">Rhydian Davison</a> and <a href="http://stylemybb.com/" target="_blank">Andraž Rihtar</a>.<br/>Icons by <a href="http://p.yusukekamiyamane.com/" target="_blank">Yasuke Kamiyamane</a> and <a href="http://www.woothemes.com/2010/08/woocons1/" target="_blank">WooThemes</a>.
+                              <!-- End of theme copyright -->
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE -->{$task_image}<!-- End task image code -->
+{$auto_dst_detection}
+		</div>
+		</div>
+                <div id="debug" style="margin-top: 10px;"><debugstuff></div>]]></template>
+		<template name="forumbit_depth2_forum" version="1411"><![CDATA[<tr>
+<td class="{$bgcolor}" align="center" valign="top" width="1"><img src="{$theme['imgdir']}/{$lightbulb['folder']}.png" alt="{$lightbulb['altonoff']}" title="{$lightbulb['altonoff']}" class="ajax_mark_read" id="mark_read_{$forum['fid']}" /></td>
+<td class="{$bgcolor}" valign="top">
+<strong><a href="{$forum_url}">{$forum['name']}</a></strong>{$forum_viewers_text}<div class="smalltext">{$forum['description']}{$modlist}{$subforums}</div>
+</td>
+<td class="{$bgcolor}" valign="top" align="center" style="white-space: nowrap">{$threads}{$unapproved['unapproved_threads']}</td>
+<td class="{$bgcolor}" valign="top" align="center" style="white-space: nowrap">{$posts}{$unapproved['unapproved_posts']}</td>
+<td class="{$bgcolor}" valign="top" align="right" style="white-space: nowrap">{$lastpost}</td>
+</tr>]]></template>
+		<template name="forumbit_depth3_statusicon" version="1411"><![CDATA[<img src="{$theme['imgdir']}/{$lightbulb['folder']}.png" alt="{$lightbulb['altonoff']}" title="{$lightbulb['altonoff']}" class="subforumicon ajax_mark_read" id="mark_read_{$forum['fid']}" />]]></template>
+		<template name="forumdisplay_newthread" version="1411"><![CDATA[<a href="newthread.php?fid={$fid}"><img src="{$theme['imglangdir']}/newthread.png" alt="{$lang->post_thread}" title="{$lang->post_thread}" /></a>]]></template>
+		<template name="forumdisplay_thread" version="1600"><![CDATA[<tr>
+	<td align="center" class="{$bgcolor}" width="2%"><img src="{$theme['imgdir']}/{$folder}.png" alt="{$folder_label}" title="{$folder_label}" /></td>
+	<td align="center" class="{$bgcolor}" width="2%">{$icon}</td>
+	<td class="{$bgcolor}">
+		{$attachment_count}
+		<div>
+			<span>{$prefix} {$gotounread}{$thread['threadprefix']}<a href="{$thread['threadlink']}" class="{$inline_edit_class} {$new_class}" id="tid_{$inline_edit_tid}">{$thread['subject']}</a>{$thread['multipage']}</span>
+			<div class="author smalltext">{$thread['profilelink']}</div>
+		</div>
+	</td>
+	<td align="center" class="{$bgcolor}"><a href="javascript:MyBB.whoPosted({$thread['tid']});">{$thread['replies']}</a>{$unapproved_posts}</td>
+	<td align="center" class="{$bgcolor}">{$thread['views']}</td>
+	{$rating}
+	<td class="{$bgcolor}" style="white-space: nowrap; text-align: right;">
+		<span class="lastpost smalltext">{$lastpostdate} {$lastposttime}<br />
+		<a href="{$thread['lastpostlink']}">{$lang->lastpost}</a>: {$lastposterlink}</span>
+	</td>
+{$modbit}
+</tr>]]></template>
+		<template name="forumdisplay_threadlist" version="1411"><![CDATA[<div class="float_left">
+	{$multipage}
+</div>
+<div class="float_right">
+	{$newthread}
+</div>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder" style="clear: both;">
+	<tr>
+		<td class="thead" colspan="{$colspan}">
+			<div style="float: right;">
+				<span class="smalltext"><strong><a href="misc.php?action=markread&amp;fid={$fid}">{$lang->markforum_read}</a> | <a href="usercp2.php?action={$add_remove_subscription}subscription&amp;type=forum&amp;fid={$fid}">{$add_remove_subscription_text}</a>{$clearstoredpass}</strong></span>
+			</div>
+			<div>
+				<strong>{$foruminfo['name']}</strong>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="tcat" colspan="3" width="66%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=subject&amp;order=asc">{$lang->thread}</a> {$orderarrow['subject']} / <a href="{$sorturl}&amp;sortby=starter&amp;order=asc">{$lang->author}</a> {$orderarrow['starter']}</strong></span></td>
+		<td class="tcat" align="center" width="7%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=replies&amp;order=desc">{$lang->replies}</a> {$orderarrow['replies']}</strong></span></td>
+		<td class="tcat" align="center" width="7%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=views&amp;order=desc">{$lang->views}</a> {$orderarrow['views']}</strong></span></td>
+		{$ratingcol}
+		<td class="tcat" align="right" width="20%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=lastpost&amp;order=desc">{$lang->lastpost}</a> {$orderarrow['lastpost']}</strong></span></td>
+		{$inlinemodcol}
+	</tr>
+	{$announcementlist}
+	{$threads}
+	<tr>
+		<td class="tfoot" align="right" colspan="{$colspan}">
+			<form action="forumdisplay.php" method="get">
+				<input type="hidden" name="fid" value="{$fid}" />
+				<select name="sortby">
+					<option value="subject" {$sortsel['subject']}>{$lang->sort_by_subject}</option>
+					<option value="lastpost" {$sortsel['lastpost']}>{$lang->sort_by_lastpost}</option>
+					<option value="starter" {$sortsel['starter']}>{$lang->sort_by_starter}</option>
+					<option value="started" {$sortsel['started']}>{$lang->sort_by_started}</option>
+					{$ratingsort}
+					<option value="replies" {$sortsel['replies']}>{$lang->sort_by_replies}</option>
+					<option value="views" {$sortsel['views']}>{$lang->sort_by_views}</option>
+				</select>
+				<select name="order">
+					<option value="asc" {$ordersel['asc']}>{$lang->sort_order_asc}</option>
+					<option value="desc" {$ordersel['desc']}>{$lang->sort_order_desc}</option>
+				</select>
+				<select name="datecut">
+					<option value="1" {$datecutsel['1']}>{$lang->datelimit_1day}</option>
+					<option value="5" {$datecutsel['5']}>{$lang->datelimit_5days}</option>
+					<option value="10" {$datecutsel['10']}>{$lang->datelimit_10days}</option>
+					<option value="20" {$datecutsel['20']}>{$lang->datelimit_20days}</option>
+					<option value="50" {$datecutsel['50']}>{$lang->datelimit_50days}</option>
+					<option value="75" {$datecutsel['75']}>{$lang->datelimit_75days}</option>
+					<option value="100" {$datecutsel['100']}>{$lang->datelimit_100days}</option>
+					<option value="365" {$datecutsel['365']}>{$lang->datelimit_lastyear}</option>
+					<option value="9999" {$datecutsel['9999']}>{$lang->datelimit_beginning}</option>
+				</select>
+				{$gobutton}
+			</form>
+		</td>
+	</tr>
+</table>
+<div class="float_left">
+	{$multipage}
+</div>
+<div class="float_right" style="margin-top: 4px;">
+	{$newthread}
+</div>
+<br style="clear: both;" />
+<br />
+<div class="float_left">
+	<div class="float_left">
+		<dl class="thread_legend smalltext">
+			<dd><img src="{$theme['imgdir']}/newfolder.png" alt="{$lang->new_thread}" title="{$lang->new_thread}" /> {$lang->new_thread}</dd>
+			<dd><img src="{$theme['imgdir']}/newhotfolder.png" alt="{$lang->new_hot_thread}" title="{$lang->new_hot_thread}" /> {$lang->new_hot_thread}</dd>
+			<dd><img src="{$theme['imgdir']}/hotfolder.png" alt="{$lang->hot_thread}" title="{$lang->hot_thread}" /> {$lang->hot_thread}</dd>
+		</dl>
+	</div>
+
+	<div class="float_left">
+		<dl class="thread_legend smalltext">
+			<dd><img src="{$theme['imgdir']}/folder.png" alt="{$lang->no_new_thread}" title="{$lang->no_new_thread}" /> {$lang->no_new_thread}</dd>
+			<dd><img src="{$theme['imgdir']}/dot_folder.png" alt="{$lang->posts_by_you}" title="{$lang->posts_by_you}" /> {$lang->posts_by_you}</dd>
+			<dd><img src="{$theme['imgdir']}/lockfolder.png" alt="{$lang->locked_thread}" title="{$lang->locked_thread}" /> {$lang->locked_thread}</dd>
+		</dl>
+	</div>
+	<br style="clear: both" />
+</div>
+
+<div class="float_right" style="text-align: right;">
+	{$inlinemod}
+	{$searchforum}
+	{$forumjump}
+</div>
+<br style="clear: both" />
+{$inline_edit_js}]]></template>
+		<template name="header" version="1411"><![CDATA[<div class="header">
+<div class="search">
+<form action="./search.php" method="post">
+                <input type="hidden" value="do_search" name="action"/>
+		<input type="submit" value="" class="search_button" />
+		<input type="text" value="Search Query..." onfocus="if(this.value == 'Search Query...') this.value = '';" class="search_box" name="keywords" />
+</form>
+</div>
+<div class="logo"><a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a></div>
+<div class="menu">
+	<ul>
+                <li><a href="{$mybb->settings['bburl']}">Home</a></li>
+		<li><a href="{$mybb->settings['bburl']}/search.php">{$lang->toplinks_search}</a></li>
+		<li><a href="{$mybb->settings['bburl']}/memberlist.php">{$lang->toplinks_memberlist}</a></li>
+		<li><a href="{$mybb->settings['bburl']}/calendar.php">{$lang->toplinks_calendar}</a></li>
+		<li><a href="{$mybb->settings['bburl']}/misc.php?action=help">{$lang->toplinks_help}</a></li>
+        </ul>
+</div>
+</div>
+<div class="submenu">
+        <ul>
+                <li><a href="{$mybb->settings['contactlink']}">{$lang->bottomlinks_contactus}</a></li>
+                <li><a href="<archive_url>">{$lang->bottomlinks_litemode}</a></li>
+                <li><a href="{$mybb->settings['bburl']}/misc.php?action=syndication">{$lang->bottomlinks_syndication}</a></li>
+        </ul>
+</div>
+        <div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">			
+			<hr class="hidden" />			
+		</div>
+                <div id="panel">
+	                {$welcomeblock}
+                </div>
+		<div id="content">
+			{$pm_notice}
+			{$bannedwarning}
+			{$bbclosedwarning}
+			{$unreadreports}
+			<navigation>
+			<br />]]></template>
+		<template name="headerinclude" version="1411"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/prototype.js?ver=1400"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/general.js?ver=1400"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/popup_menu.js?ver=1400"></script>
+{$stylesheets}
+<!--[if IE 7]><link type="text/css" rel="stylesheet" href="{$mybb->settings['bburl']}/images/1point6/ie7.css" /><![endif]-->
+<script type="text/javascript">
+<!--
+	var cookieDomain = "{$mybb->settings['cookiedomain']}";
+	var cookiePath = "{$mybb->settings['cookiepath']}";
+	var cookiePrefix = "{$mybb->settings['cookieprefix']}";
+	var deleteevent_confirm = "{$lang->deleteevent_confirm}";
+	var removeattach_confirm = "{$lang->removeattach_confirm}";
+	var loading_text = '{$lang->ajax_loading}';
+	var saving_changes = '{$lang->saving_changes}';
+	var use_xmlhttprequest = "{$mybb->settings['use_xmlhttprequest']}";
+	var my_post_key = "{$mybb->post_code}";
+	var imagepath = "{$theme['imgdir']}";
+// -->
+</script>
+{$newpmmsg}]]></template>
+		<template name="header_welcomeblock_guest" version="1411"><![CDATA[<script type="text/javascript">
+<!--
+	lang.username = "{$lang->login_username}";
+	lang.password = "{$lang->login_password}";
+	lang.login = "{$lang->login}";
+	lang.lost_password = " &mdash; <a href=\"{$mybb->settings['bburl']}/member.php?action=lostpw\">{$lang->lost_password}<\/a>";
+	lang.register_url = " &mdash; <a href=\"{$mybb->settings['bburl']}/member.php?action=register\">{$lang->welcome_register}<\/a>";
+// -->
+</script>
+<span style="float: right;">{$lang->welcome_current_time}</span>
+		<span id="quick_login">{$lang->welcome_guest} (<a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="MyBB.quickLogin(); return false;">{$lang->welcome_login}</a> &mdash; <a href="{$mybb->settings['bburl']}/member.php?action=register">{$lang->welcome_register}</a>)</span>]]></template>
+		<template name="index" version="1411"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']}</title>
+{$headerinclude}
+<script type="text/javascript">
+<!--
+	lang.no_new_posts = "{$lang->no_new_posts}";
+	lang.click_mark_read = "{$lang->click_mark_read}";
+// -->
+</script>
+</head>
+<body>
+{$header}
+{$forums}
+{$boardstats}
+
+<dl class="forum_legend smalltext">
+	<dt><img src="{$theme['imgdir']}/on.png" alt="{$lang->new_posts}" title="{$lang->new_posts}" style="vertical-align: middle; padding-bottom: 4px;" /></dt>
+	<dd>{$lang->new_posts}</dd>
+
+	<dt><img src="{$theme['imgdir']}/off.png" alt="{$lang->no_new_posts}" title="{$lang->no_new_posts}" style="vertical-align: middle; padding-bottom: 4px;" /></dt>
+	<dd>{$lang->no_new_posts}</dd>
+
+	<dt><img src="{$theme['imgdir']}/offlock.png" alt="{$lang->forum_locked}" title="{$lang->forum_locked}" style="vertical-align: middle;" /></dt>
+	<dd>{$lang->forum_locked}</dd>
+</dl>
+<br style="clear: both" />
+{$footer}
+</body>
+</html>]]></template>
+		<template name="member_profile" version="1600"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$lang->profile}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="trow1">
+<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td class="trow1" width="75%">
+<span class="largetext"><strong>{$formattedname}</strong></span><br />
+<span class="smalltext">
+({$usertitle})<br />
+{$groupimage}
+{$userstars}<br />
+<br />
+<strong>{$lang->registration_date}</strong> {$memregdate}<br />
+<strong>{$lang->date_of_birth}</strong> {$membday} {$membdayage}<br />
+<strong>{$lang->local_time}</strong> {$localtime}<br />
+<strong>{$lang->postbit_status}</strong> {$online_status}
+</span>
+</td><td width="25%" align="right" valign="middle">{$avatar}</td></tr></table>
+</td>
+</tr>
+{$awaybit}
+</table>
+<br />
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tr>
+<td width="50%" valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="2" class="thead"><strong>{$lang->users_forum_info}</strong></td>
+</tr>
+<tr>
+<td class="trow1"><strong>{$lang->joined}</strong></td>
+<td class="trow1">{$memregdate}</td>
+</tr>
+<tr>
+<td class="trow2"><strong>{$lang->lastvisit}</strong></td>
+<td class="trow2">{$memlastvisitdate} {$memlastvisittime}</td>
+</tr>
+<tr>
+<td class="trow1"><strong>{$lang->total_posts}</strong></td>
+<td class="trow1">{$memprofile['postnum']} ({$lang->ppd_percent_total})<br /><span class="smalltext">(<a href="search.php?action=finduserthreads&amp;uid={$uid}">{$lang->find_threads}</a> &mdash; <a href="search.php?action=finduser&amp;uid={$uid}">{$lang->find_posts}</a>)</span></td>
+</tr>
+<tr>
+<td class="trow2"><strong>{$lang->timeonline}</strong></td>
+<td class="trow2">{$timeonline}</td>
+</tr>
+{$referrals}
+{$reputation}
+{$warning_level}
+</table>
+<br />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="2" class="thead"><strong>{$lang->users_contact_details}</strong></td>
+</tr>
+<tr>
+<td class="trow1"><strong>{$lang->homepage}</strong></td>
+<td class="trow1">{$website}</td>
+</tr>
+{$sendemail}
+<tr>
+<td class="{$bgcolors['pm']}"><strong>{$lang->pm}</strong></td>
+<td class="{$bgcolors['pm']}"><a href="private.php?action=send&amp;uid={$memprofile['uid']}">{$lang->send_pm}</a></td>
+</tr>
+<tr>
+<td class="{$bgcolors['icq']}"><strong>{$lang->icq_number}</strong></td>
+<td class="{$bgcolors['icq']}">{$memprofile['icq']}</td>
+</tr>
+<tr>
+<td class="{$bgcolors['aim']}"><strong>{$lang->aim_screenname}</strong></td>
+<td class="{$bgcolors['aim']}"><a href="javascript:;" onclick="MyBB.popupWindow('misc.php?action=imcenter&amp;imtype=aim&amp;uid={$uid}', 'imcenter', 450, 300);">{$memprofile['aim']}</a></td>
+</tr>
+<tr>
+<td class="{$bgcolors['yahoo']}"><strong>{$lang->yahoo_id}</strong></td>
+<td class="{$bgcolors['yahoo']}"><a href="javascript:;" onclick="MyBB.popupWindow('misc.php?action=imcenter&amp;imtype=yahoo&amp;uid={$uid}', 'imcenter', 450, 300);">{$memprofile['yahoo']}</a></td>
+</tr>
+<tr>
+<td class="{$bgcolors['msn']}"><strong>{$lang->msn}</strong></td>
+<td class="{$bgcolors['msn']}"><a href="javascript:;" onclick="MyBB.popupWindow('misc.php?action=imcenter&amp;imtype=msn&amp;uid={$uid}', 'imcenter', 450, 300);">{$memprofile['msn']}</a></td>
+</tr>
+</table>
+</td>
+<td><img src="{$theme['imgdir']}/pixel.gif" height="1" width="8" alt=""/></td>
+<td width="50%" valign="top">
+{$profilefields}
+{$signature}
+{$modoptions}
+{$adminoptions}
+{$buddy_options}
+</td>
+</tr>
+</table>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="member_register" version="1609"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$lang->registration}</title>
+{$headerinclude}
+<script type="text/javascript" src="jscripts/validator.js"></script>
+</head>
+<body>
+{$header}
+<br />
+<form action="member.php" method="post" id="registration_form"><input type="text" style="visibility: hidden;" value="" name="regcheck1" /><input type="text" style="visibility: hidden;" value="true" name="regcheck2" />
+{$regerrors}
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->registration}</strong></td>
+</tr>
+<tr>
+<td width="50%" class="trow1" valign="top">
+<fieldset class="trow2">
+<legend><strong>{$lang->account_details}</strong></legend>
+<table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+<tr>
+<td colspan="2"><span class="smalltext"><label for="username">{$lang->username}</label></span></td>
+</tr>
+<tr>
+<td colspan="2"><input type="text" class="textbox" name="username" id="username" style="width: 100%" value="{$username}" /></td>
+</tr>
+{$passboxes}
+<tr>
+<td><span class="smalltext"><label for="email">{$lang->email}</label></span></td>
+<td><span class="smalltext"><label for="email2">{$lang->confirm_email}</label></span></td>
+</tr>
+<tr>
+<td><input type="text" class="textbox" name="email" id="email" style="width: 100%" maxlength="50" value="{$email}" /></td>
+<td><input type="text" class="textbox" name="email2" id="email2" style="width: 100%" maxlength="50" value="{$email2}" /></td>
+</tr>
+<tr>
+	<td colspan="2" style="display: none;" id="email_status">&nbsp;</td>
+</tr>
+{$hiddencaptcha}
+</table>
+</fieldset>
+{$requiredfields}
+{$referrer}
+{$regimage}
+</td>
+<td width="50%" class="trow1" valign="top">
+<fieldset class="trow2">
+<legend><strong>{$lang->account_prefs}</strong></legend>
+<table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+<tr>
+<td valign="top" width="1"><input type="checkbox" class="checkbox" name="allownotices" id="allownotices" value="1" {$allownoticescheck} /></td>
+<td valign="top"><span class="smalltext"><label for="allownotices">{$lang->allow_notices}</label></span></td>
+</tr>
+<tr>
+<td valign="top" width="1"><input type="checkbox" class="checkbox" name="hideemail" id="hideemail" value="1" {$hideemailcheck} /></td>
+<td valign="top"><span class="smalltext"><label for="hideemail">{$lang->hide_email}</label></span></td>
+</tr>
+<tr>
+<td valign="top" width="1"><input type="checkbox" class="checkbox" name="receivepms" id="receivepms" value="1" {$receivepmscheck} /></td>
+<td valign="top"><span class="smalltext"><label for="receivepms">{$lang->receive_pms}</label></span></td>
+</tr>
+<tr>
+<td valign="top" width="1"><input type="checkbox" class="checkbox" name="pmnotice" id="pmnotice" value="1"{$pmnoticecheck} /></td>
+<td valign="top"><span class="smalltext"><label for="pmnotice">{$lang->pm_notice}</label></span></td>
+</tr>
+<tr>
+<td valign="top" width="1"><input type="checkbox" class="checkbox" name="emailpmnotify" id="emailpmnotify" value="1" {$emailpmnotifycheck} /></td>
+<td valign="top"><span class="smalltext"><label for="emailpmnotify">{$lang->email_notify_newpm}</label></span></td>
+</tr>
+<tr>
+<td valign="top" width="1"><input type="checkbox" class="checkbox" name="invisible" id="invisible" value="1" {$invisiblecheck} /></td>
+<td valign="top"><span class="smalltext"><label for="invisible">{$lang->invisible_mode}</label></span></td>
+</tr>
+<tr>
+<td colspan="2"><span class="smalltext"><label for="subscriptionmethod">{$lang->subscription_method}</label></span></td>
+</tr>
+<tr>
+<td colspan="2">
+	<select name="subscriptionmethod" id="subscriptionmethod">
+		<option value="0" {$no_subscribe_selected}>{$lang->no_auto_subscribe}</option>
+		<option value="1" {$no_email_subscribe_selected}>{$lang->no_email_subscribe}</option>
+		<option value="2" {$instant_email_subscribe_selected}>{$lang->instant_email_subscribe}</option>
+	</select>
+</td>
+</tr>
+
+</table>
+</fieldset>
+<br />
+<fieldset class="trow2">
+<legend><strong><label for="timezone">{$lang->time_offset}</label></strong></legend>
+<table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+<tr>
+<td><span class="smalltext">{$lang->time_offset_desc}</span></td>
+</tr>
+<tr>
+<td>{$tzselect}</td>
+</tr>
+<tr>
+<td><span class="smalltext">{$lang->dst_correction}</span></td>
+</tr>
+<tr>
+<td>
+	<select name="dstcorrection">
+		<option value="2" {$dst_auto_selected}>{$lang->dst_correction_auto}</option>
+		<option value="1" {$dst_enabled_selected}>{$lang->dst_correction_enabled}</option>
+		<option value="0" {$dst_disabled_selected}>{$lang->dst_correction_disabled}</option>
+	</select>
+</td>
+</tr>
+</table>
+</fieldset>
+<br />
+<fieldset class="trow2">
+<legend><strong><label for="language">{$lang->lang_select}</label></strong></legend>
+<table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+<tr>
+<td colspan="2"><span class="smalltext">{$lang->lang_select_desc}</span></td>
+</tr>
+<tr>
+<td><select name="language" id="language"><option value="">{$lang->lang_select_default}</option><option value="">-----------</option>{$langoptions}</select></td>
+</tr>
+</table>
+</fieldset>
+</td>
+</tr>
+</table>
+<br />
+<div align="center">
+<input type="hidden" name="step" value="registration" />
+<input type="hidden" name="action" value="do_register" />
+<input type="submit" class="button" name="regsubmit" value="{$lang->submit_registration}" />
+</div>
+</form>
+<script type="text/javascript">
+<!--
+	regValidator = new FormValidator('registration_form');
+	regValidator.register('username', 'notEmpty', {failure_message:'{$lang->js_validator_no_username}'});
+    regValidator.register('email', 'regexp', {match_field:'email2', regexp:'^([a-zA-Z0-9_\\.\\+\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$', failure_message:'{$lang->js_validator_invalid_email}'});
+	regValidator.register('email2', 'matches', {match_field:'email', status_field:'email_status', failure_message:'{$lang->js_validator_email_match}'});
+{$validator_extra}
+	regValidator.register('username', 'ajax', {url:'xmlhttp.php?action=username_availability', loading_message:'{$lang->js_validator_checking_username}'}); // needs to be last
+// -->
+</script>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="modcp_nav" version="1411"><![CDATA[<td width="{$lang->nav_width}" valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+	<tr>
+		<td class="thead"><strong>{$lang->nav_menu}</strong></td>
+	</tr>
+	<tr><td class="trow1 smalltext"><a href="modcp.php" class="modcp_nav_item modcp_nav_home">{$lang->mcp_nav_home}</a></td></tr>
+	<tr>
+		<td class="tcat">
+			<div class="float_right"><img src="{$theme['imgdir']}/2collapse{$collapsedimg['modcpforums']}.gif" id="modcpforums_img" class="expander" alt="[-]" title="[-]" /></div>
+			<div><span class="smalltext"><strong>{$lang->mcp_nav_forums}</strong></span></div>
+		</td>
+	</tr>
+	<tbody style="{$collapsed['modcpforums_e']}" id="modcpforums_e">
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=announcements" class="modcp_nav_item modcp_nav_announcements">{$lang->mcp_nav_announcements}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=modqueue" class="modcp_nav_item modcp_nav_modqueue">{$lang->mcp_nav_modqueue}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=reports" class="modcp_nav_item modcp_nav_reports">{$lang->mcp_nav_reported_posts}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=modlogs" class="modcp_nav_item modcp_nav_modlogs">{$lang->mcp_nav_modlogs}</a></td></tr>
+	</tbody>
+	<tr>
+		<td class="tcat">
+			<div class="float_right"><img src="{$theme['imgdir']}/2collapse{$collapsedimg['modcpusers']}.gif" id="modcpusers_img" class="expander" alt="[-]" title="[-]" /></div>
+			<div><span class="smalltext"><strong>{$lang->mcp_nav_users}</strong></span></div>
+		</td>
+	</tr>
+	<tbody style="{$collapsed['modcpusers_e']}" id="modcpusers_e">
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=finduser" class="modcp_nav_item modcp_nav_editprofile">{$lang->mcp_nav_editprofile}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=banning" class="modcp_nav_item modcp_nav_banning">{$lang->mcp_nav_banning}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=warninglogs" class="modcp_nav_item modcp_nav_warninglogs">{$lang->mcp_nav_warninglogs}</a></td></tr>
+		<tr><td class="trow1 smalltext"><a href="modcp.php?action=ipsearch" class="modcp_nav_item modcp_nav_ipsearch">{$lang->mcp_nav_ipsearch}</a></td></tr>
+	</tbody>
+</table>
+</td>]]></template>
+		<template name="postbit" version="1600"><![CDATA[{$ignore_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder2" style="{$post_extra_style} {$post_visibility}" id="post_{$post['pid']}">
+	<tbody>
+		<tr>
+			<td class="tcat">
+				<div class="float_left smalltext">
+					{$post['postdate']}, {$post['posttime']} <span id="edited_by_{$post['pid']}">{$post['editedmsg']}</span>
+				</div>
+				{$post['posturl']}
+			</td>
+		</tr>
+
+		<tr>
+			<td class="trow1 {$unapproved_shade}">
+				<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+					<tr>
+						<td class="post_avatar" width="1" style="{$post['avatar_padding']}">
+							{$post['useravatar']}
+						</td>
+						<td class="post_author">
+							<strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br />
+							<span class="smalltext">
+								{$post['usertitle']}<br />
+								{$post['userstars']}
+								{$post['groupimage']}
+							</span>
+						</td>
+						<td class="smalltext post_author_info" width="165">
+							{$post['user_details']}
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="trow2 post_content {$unapproved_shade}">
+				<span class="smalltext"><strong>{$post['icon']}{$post['subject']} {$post['subject_extra']}</strong></span>
+
+				<div class="post_body" id="pid_{$post['pid']}">
+					{$post['message']}
+				</div>
+				{$post['attachments']}
+				{$post['signature']}
+
+				<div class="post_meta" id="post_meta_{$post['pid']}">
+				{$post['iplogged']}
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="trow1 post_buttons {$unapproved_shade}">
+				<div class="author_buttons float_left">
+					{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}
+				</div>
+				<div class="post_management_buttons float_right">{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>]]></template>
+		<template name="postbit_classic" version="1605"><![CDATA[{$ignore_bit}
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder" style="{$post_extra_style} {$post_visibility}" id="post_{$post['pid']}">
+	<tr>
+		<td class="{$altbg}" width="15%" valign="top" style="white-space: nowrap; text-align: center;"><a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+		<strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br />
+		<span class="smalltext">
+			{$post['usertitle']}<br />
+			{$post['userstars']}
+			{$post['groupimage']}
+			{$post['useravatar']}<br />
+			{$post['user_details']}
+		</span>
+	</td>
+	<td class="{$altbg}" valign="top">
+		<table width="100%">
+			<tr><td>{$post['posturl']}<span class="smalltext"><strong>{$post['icon']}{$post['subject']} {$post['subject_extra']}</strong></span>
+			<br />
+			<div id="pid_{$post['pid']}" class="post_body">
+				{$post['message']}
+			</div>
+			{$post['attachments']}
+			{$post['signature']}
+			<div style="text-align: right; vertical-align: bottom;" id="post_meta_{$post['pid']}">
+				<div id="edited_by_{$post['pid']}">{$post['editedmsg']}</div>
+				{$post['iplogged']}
+			</div>
+		</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+	<td class="{$altbg}" style="white-space: nowrap; text-align: center; vertical-align: middle;"><span class="smalltext">{$post['postdate']} {$post['posttime']}</span></td>
+	<td class="{$altbg}" style="vertical-align: middle;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr valign="bottom">
+				<td align="left" ><span class="smalltext">{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}</span></td>
+				<td align="right">{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>]]></template>
+		<template name="postbit_edit" version="1411"><![CDATA[<a href="editpost.php?pid={$post['pid']}" id="edit_post_{$post['pid']}"><img src="{$theme['imglangdir']}/postbit_edit.png" alt="{$lang->postbit_edit}" title="{$lang->postbit_edit}" /></a>
+<div id="edit_post_{$post['pid']}_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="javascript:;" onclick="Thread.quickEdit({$post['pid']});" class="popup_item">{$lang->postbit_quick_edit}</a></div><div class="popup_item_container"><a href="editpost.php?pid={$post['pid']}" class="popup_item">{$lang->postbit_full_edit}</a></div></div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		new PopupMenu("edit_post_{$post['pid']}");
+	}
+// -->
+</script>]]></template>
+		<template name="postbit_email" version="1411"><![CDATA[<a href="member.php?action=emailuser&amp;uid={$post['uid']}"><img src="{$theme['imglangdir']}/postbit_email.png" alt="{$lang->postbit_email}" title="{$lang->postbit_email}" /></a>]]></template>
+		<template name="postbit_find" version="1411"><![CDATA[<a href="search.php?action=finduser&amp;uid={$post['uid']}"><img src="{$theme['imglangdir']}/postbit_find.png" alt="{$lang->postbit_find}" title="{$lang->postbit_find}" /></a>]]></template>
+		<template name="postbit_forward_pm" version="1411"><![CDATA[<a href="private.php?action=send&amp;pmid={$id}&amp;do=forward"><img src="{$theme['imglangdir']}/pm_forward.png" alt="{$lang->forward}" title="{$lang->forward_title}" /></a>]]></template>
+		<template name="postbit_offline" version="1411"><![CDATA[<img src="{$theme['imgdir']}/buddy_offline.png" title="{$lang->postbit_status_offline}" alt="{$lang->postbit_status_offline}" />]]></template>
+		<template name="postbit_online" version="1411"><![CDATA[<a href="online.php" title="{$lang->postbit_status_online}"><img src="{$theme['imgdir']}/buddy_online.png" border="0" alt="{$lang->postbit_status_online}" /></a>]]></template>
+		<template name="postbit_pm" version="1411"><![CDATA[<a href="private.php?action=send&amp;uid={$post['uid']}"><img src="{$theme['imglangdir']}/postbit_pm.png" alt="{$lang->postbit_pm}" title="{$lang->postbit_pm}" /></a>]]></template>
+		<template name="postbit_quickdelete" version="1411"><![CDATA[<a href="editpost.php?pid={$post['pid']}" onclick="Thread.deletePost({$post['pid']}); return false;" style="display: none;" id="quick_delete_{$post['pid']}"><img src="{$theme['imglangdir']}/postbit_delete.png" alt="{$lang->postbit_qdelete}" title="{$lang->postbit_qdelete}" /></a>
+<script type="text/javascript">
+// <!--
+	$('quick_delete_{$post['pid']}').style.display = '';
+// -->
+</script>]]></template>
+		<template name="postbit_quote" version="1411"><![CDATA[<a href="newreply.php?tid={$tid}&amp;pid={$post['pid']}"><img src="{$theme['imglangdir']}/postbit_quote.png" alt="{$lang->postbit_quote}" title="{$lang->postbit_quote}" /></a>]]></template>
+		<template name="postbit_replyall_pm" version="1411"><![CDATA[<a href="private.php?action=send&amp;pmid={$id}&amp;do=replyall"><img src="{$theme['imglangdir']}/postbit_replyall.png" alt="{$lang->reply_to_all}" title="{$lang->reply_title}" /></a>]]></template>
+		<template name="postbit_reply_pm" version="1411"><![CDATA[<a href="private.php?action=send&amp;pmid={$id}&amp;do=reply"><img src="{$theme['imglangdir']}/pm_reply.png" alt="{$lang->reply}" title="{$lang->reply_title}" /></a>]]></template>
+		<template name="postbit_report" version="1411"><![CDATA[<a href="javascript:Thread.reportPost({$post['pid']});"><img src="{$theme['imglangdir']}/postbit_report.png" alt="{$lang->postbit_report}" title="{$lang->postbit_report}" /></a>]]></template>
+		<template name="postbit_rep_button" version="1600"><![CDATA[<a href="javascript:MyBB.reputation({$post['uid']},{$post['pid']});"><img src="{$theme['imglangdir']}/postbit_reputation.png" alt="{$lang->postbit_reputation}" title="{$lang->postbit_reputation}" /></a>]]></template>
+		<template name="postbit_warn" version="1411"><![CDATA[<a href="warnings.php?action=warn&amp;uid={$post['uid']}&amp;pid={$post['pid']}"><img src="{$theme['imglangdir']}/postbit_warn.png" alt="{$lang->postbit_warn}" title="{$lang->postbit_warn}" /></a>]]></template>
+		<template name="postbit_www" version="1411"><![CDATA[<a href="{$post['website']}" target="_blank"><img src="{$theme['imglangdir']}/postbit_www.png" alt="{$lang->postbit_website}" title="{$lang->postbit_website}" /></a>]]></template>
+		<template name="reputation_addlink" version="1411"><![CDATA[<div class="float_right" style="padding-bottom: 4px;"><a href="javascript:MyBB.reputation({$user['uid']});"><img src="{$theme['imglangdir']}/rateuser.png" alt="{$lang->rate_user}" title="{$lang->rate_user}" /></a></div>]]></template>
+		<template name="showthread_newreply" version="1411"><![CDATA[<a href="newreply.php?tid={$tid}"><img src="{$theme['imglangdir']}/newreply.png" alt="{$lang->post_reply_img}" title="{$lang->post_reply_img}" /></a>&nbsp;]]></template>
+		<template name="showthread_newreply_closed" version="1411"><![CDATA[<a href="newreply.php?tid={$tid}"><img src="{$theme['imglangdir']}/closed.png" alt="{$lang->thread_closed}" title="{$lang->thread_closed}" /></a>&nbsp;]]></template>
+		<template name="usercp_latest_threads_threads" version="1600"><![CDATA[<tr>
+<td align="center" class="{$bgcolor}" width="2%"><img src="{$theme['imgdir']}/{$folder}.png" alt="{$folder_label}" title="{$folder_label}" /></td>
+<td align="center" class="{$bgcolor}" width="2%">{$icon}</td>
+<td class="{$bgcolor}">{$gotounread}{$thread['displayprefix']}<a href="{$thread['threadlink']}" class="{$new_class}">{$thread['subject']}</a><br /><span class="smalltext">{$thread['author']}</span></td>
+<td align="center" class="{$bgcolor}"><a href="javascript:MyBB.whoPosted({$thread['tid']});">{$thread['replies']}</a></td>
+<td align="center" class="{$bgcolor}">{$thread['views']}</td>
+<td class="{$bgcolor}" style="white-space: nowrap"><span class="smalltext">{$lastpostdate} {$lastposttime}
+<br /><a href="{$thread['lastpostlink']}">{$lang->lastpost}</a>: {$lastposterlink}</span>
+</td>
+</tr>]]></template>
+		<template name="usercp_nav_messenger" version="1411"><![CDATA[<tr>
+	<td class="tcat">
+		<div class="float_right"><img src="{$theme['imgdir']}/2collapse{$collapsedimg['usercppms']}.gif" id="usercppms_img" class="expander" alt="[-]"/></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_messenger}</strong></span></div>
+	</td>
+</tr>
+<tbody style="{$collapsed['usercppms_e']}" id="usercppms_e">
+	<tr><td class="trow1 smalltext"><a href="private.php?action=send" class="usercp_nav_item usercp_nav_composepm">{$lang->ucp_nav_compose}</a></td></tr>
+	<tr>
+		<td class="trow1 smalltext">
+			{$folderlinks}
+		</td>
+	</tr>
+	<tr><td class="trow1 smalltext"><a href="private.php?action=tracking" class="usercp_nav_item usercp_nav_pmtracking">{$lang->ucp_nav_tracking}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="private.php?action=folders" class="usercp_nav_item usercp_nav_pmfolders">{$lang->ucp_nav_edit_folders}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_nav_misc" version="1411"><![CDATA[<tr>
+	<td class="tcat">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/2collapse{$collapsedimg['usercpmisc']}.gif" id="usercpmisc_img" class="expander" alt="[-]" title="[-]" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_misc}</strong></span></div>
+	</td>
+</tr>
+<tbody style="{$collapsed['usercpmisc_e']}" id="usercpmisc_e">
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=usergroups" class="usercp_nav_item usercp_nav_usergroups">{$lang->ucp_nav_usergroups}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=editlists" class="usercp_nav_item usercp_nav_editlists">{$lang->ucp_nav_editlists}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=attachments" class="usercp_nav_item usercp_nav_attachments">{$lang->ucp_nav_attachments}</a></td></tr>
+	<tr><td class="trow1 smalltext">{$draftstart}<a href="usercp.php?action=drafts" class="usercp_nav_item usercp_nav_drafts">{$lang->ucp_nav_drafts} {$draftcount}</a>{$draftend}</td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=subscriptions" class="usercp_nav_item usercp_nav_subscriptions">{$lang->ucp_nav_subscribed_threads}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=forumsubscriptions" class="usercp_nav_item usercp_nav_fsubscriptions">{$lang->ucp_nav_forum_subscriptions}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=notepad" class="usercp_nav_item usercp_nav_notepad">{$lang->ucp_nav_notepad}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="{$profile_link}" class="usercp_nav_item usercp_nav_viewprofile">{$lang->ucp_nav_view_profile}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_nav_profile" version="1411"><![CDATA[<tr>
+	<td class="tcat">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/2collapse{$collapsedimg['usercpprofile']}.gif" id="usercpprofile_img" class="expander" alt="[-]" title="[-]" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_profile}</strong></span></div>
+	</td>
+</tr>
+<tbody style="{$collapsed['usercpprofile_e']}" id="usercpprofile_e">
+	<tr><td class="trow1 smalltext">
+		<div><a href="usercp.php?action=profile" class="usercp_nav_item usercp_nav_profile">{$lang->ucp_nav_edit_profile}</a></div>
+		{$changenameop}
+		<div><a href="usercp.php?action=password" class="usercp_nav_item usercp_nav_password">{$lang->ucp_nav_change_pass}</a></div>
+		<div><a href="usercp.php?action=email" class="usercp_nav_item usercp_nav_email">{$lang->ucp_nav_change_email}</a></div>
+		<div><a href="usercp.php?action=avatar" class="usercp_nav_item usercp_nav_avatar">{$lang->ucp_nav_change_avatar}</a></div>
+		<div><a href="usercp.php?action=editsig" class="usercp_nav_item usercp_nav_editsig">{$lang->ucp_nav_edit_sig}</a></div>
+	</td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=options" class="usercp_nav_item usercp_nav_options">{$lang->ucp_nav_edit_options}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_notepad" version="1600"><![CDATA[<br />
+<form action="usercp.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead"><strong>{$lang->personal_notepad}</strong></td>
+</tr>
+<tr>
+<td align="center" class="trow1" width="100%">
+<textarea name="notepad" cols="100%" rows="10" class="usercp_notepad">{$mybb->user['notepad']}</textarea>
+</td>
+</tr>
+</table>
+<br />
+<div align="center">
+<input type="hidden" name="action" value="do_notepad" />
+<input type="submit" class="button" name="submit" value="{$lang->update_notepad}" />
+</div>
+</form>]]></template>
+	</templates>
+</theme>
